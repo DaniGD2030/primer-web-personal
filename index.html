@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>MI WEB PERSONAL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #e5e0d8;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+            h1,h2,h3,h4,h5{
+                color: #725c3a;
+            }
+            /*Encabezado*/
+            header{
+                background-color: #809671;
+                color: #e5d2b8;
+                text-align: center;
+                padding: 20px;
+            }
+            header h1{
+                color: #000000;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            nav ul{
+                list-style: none;
+                padding: 0;
+            }
+            nav ul li{
+                display:inline;
+                margin: 0 25px;
+            }
+            nav ul li a{
+                color: #d2ab80;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            nav ul li a:hover{
+                color: #b3b792;
+            }
+            /*Contenido*/
+            main{
+                padding: 20px;
+            }
+            section,article,aside{
+                background-color: #b3b792;
+                padding: 20px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                text-align: justify;
+                text-wrap: balance;
+            }
+            section{
+                text-align: justify;
+                text-wrap: balance;
+            }
+
+            aside{
+                background-color: #e5d2b8;
+                border-left:4px solid #809671;
+            }
+            footer{
+                background-color: black;
+                text-align: center;
+                color: white;
+                padding: 12px;
+            }
+            footer a{
+                color: white;
+                margin: 0 10px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+            aside h5{
+                font-size: 20px;
+            }       
+            article h4{
+                font-size: 20px;
+            }
+            .contenedor-flex{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+            .imagen{
+                flex: 1;
+            }
+            .texto{
+                flex: 2;
+            }
+            .imagen img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                display: block;
+            }
+            @keyframes heartBeat {
+                0% {
+                    transform: scale(1);
+                }
+                14% {
+                    transform: scale(1.3);
+                }
+                28% {
+                    transform: scale(1);
+                }
+                42% {
+                    transform: scale(1.3);
+                }
+                70% {
+                    transform: scale(1);
+                }
+            }
+            .heartBeat-text {
+                display: inline-block;
+                animation: heartBeat 1.5s ease-in-out infinite;
+            }
+           
+            </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="heartBeat-text">MI WEB PERSONAL</h1>
+           <div class="foto">
+             <img src="imagenes/perrito.jpeg" alt="Mi foto de perfil" title="Esta es mi foto" width="400" height="300">
+           </div>
+            <nav>
+                <ul>
+                    <li><a href="#quienSoy">¿Quien soy?</a></li>
+                    <li><a href="#preferencias">Preferencias</a></li>
+                    <li><a href="#gustos">Gustos</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="quienSoy">
+                  <h2 id="quienSoy">¿Quien soy?</h2>
+                </div>
+                <p>
+                    Hola, mi nombre es <b>Danila GD</b>, soy estudiante de la <small>Universidad Tecnologica de Leon</small>, 
+                    estoy en el 4to semestre de la carrera de <i>Tecnologias de la Informacion
+                    área entornos virtuales y negocios digitales.</i>
+                </p>
+            </section>
+            <hr>
+            <section>
+                <article>
+                    <div class="contenedor-flex">
+                        <div class="texto">
+                           <h3 id="preferencias">Mis preferencias generales</h3>
+                    <p>
+                        <u>Mis preferencias son:</u>
+                        <ul>
+                            <li>Comida favorita: Los chilaquiles o cualquier cosa con chocolate</li>
+                            <li>Color favorito: Los colores neutros pero más cafés</li>
+                            <li>Materia favorita: Todo lo que tenga números o pensamiento lógico-matemático</li>
+                            <li>Deporte favorito: Me gusta salir a correr y ejercicios de fuerza</li>
+                    </p>
+                        </div>
+                        <div class="imagen">
+                       <img src="imagenes/chilaquiles.jpg" alt="chilaquiles" title="Como se me antojan" width="200" height="300">
+                     </div>
+                    </div>
+                    
+                    
+                </section>
+             </article>
+             <hr>
+                <article>
+                    <h4 id="gustos">Mis gustos generales</h4>
+                    <p>
+                        <u>Mis gustos son:</u>
+                        <ul>
+                            <li><em>Música favorita:</em> No tengo, siempre y cuando me guste le ritmo 
+                                y la melodía la podré escuahr sin importar el género</li>
+                            <li><em>Películas Favoritas:</em> Las de accion y romance.</li>
+                            <li><em>Libros Fvoritos:</em> Los de romance y autoayuda.</li>
+                            <li><em>Bebidas favoritas:</em> Café frío, agua natural y agua de sabores.</li>
+
+                        </ul>
+                    </p>
+                    <div class="musica">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/4JaLkM90MJutDAl5jD9BZX?utm_source=generator" width="300" height="200" 
+                        frameBorder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </article>
+                <hr>
+                <aside>
+                    <h5 id="hobbies">Sobre mis hobbies</h5>
+                    <table border="1" cellpadding="5" cellspacing="0">
+                        <caption>Mis Hobbies</caption>
+                        <thead>
+                            <tr>
+                                <th>Hobby</th>
+                                <th>Frecuencia</th>
+                                <th>Duración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Correr</td>
+                                <td>2-3 veces por semana</td>
+                                <td>20-30 minutos</td>
+                            </tr>
+                            <tr>
+                                <td>Escuchar podcats</td>
+                                <td>diariamente</td>
+                                <td>10-15 minutos</td>
+                            </tr>
+                            <tr>
+                                <td>Leer</td>
+                                <td>2 veces a la semana</td>
+                                <td>20-30 minutos</td>
+                            </tr>
+                            <tr>
+                                <td>Salir con mis amigos7 citas con mi novio</td> 
+                                <td>1-2 veces por semana</td>
+                                <td>2-3 horas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <div class="hoobiefoto">
+                    <img src="imagenes/running.jpg" alt="Correr por la mañana" 
+                     title="Este es uno de mis hobbies" width="400" height="300">
+                       </div>
+                      <hr>
+                </aside>
+        </main>   
+    <footer>
+            <p>&copy; 2025 Web Info de TI | Contacto: info@utleon.edu.mx</p>
+            <nav>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://mx.pinterest.com/" target="_blank">
+                        <i class="fab fa-pinterest"></i>
+            </nav>
+    </body>
+</html>
